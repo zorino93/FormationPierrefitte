@@ -1,0 +1,46 @@
+body{
+    background: url(https://i.ytimg.com/vi/V2E3m3pOJYA/maxresdefault.jpg) no-repeat center /cover;
+   /* background-repeat: no-repeat; */
+   /*background-size: cover; le cover dis que l'image prend toute la page*/
+   font-family: "Indie-Flower",cursive;
+   opacity:0.75;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    font-family: "Josefin-Sans",sans-serif;
+    text-align: center;
+}
+
+.bloc-fixe{
+    border:solid 1px;
+    border-color:red;
+    width:30%;
+    left:500px;
+    height:30%;
+    bottom:10px;
+    margin-left:35%;
+background-color: blueviolet;
+}
+.title1{
+    color:red;
+    text-align: center;
+}
+
+p{
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50em;
+}
+
+.bloc{
+    border:solid 1px;
+    border-color:red;
+    width:30%;
+    left:500px;
+    height:30%;
+    bottom:10px;
+    margin-left:35%;
+background-color: blueviolet;
+}

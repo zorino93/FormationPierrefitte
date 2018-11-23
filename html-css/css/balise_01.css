@@ -1,0 +1,96 @@
+*{
+    text-align: right;
+}
+
+body{
+    background: #f5deb3;
+}
+
+header{
+    background-color: #9e0942;
+    color: #fff;
+    height: 300px;
+    background: url(http://4.bp.blogspot.com/-vk5b67ll8Ko/VqGbiLzXyYI/AAAAAAAAKsQ/jZer7-iFsl8/s1600/6mage.jpg);
+}
+
+.slogan{
+    height: 60px;
+    background:transparent;
+    color: #e4e4e4;
+    width: 50%;
+    text-align: center;
+    margin:0 0 0 20%;
+    padding: 6%;
+}
+
+nav{
+    background: rgb(130, 185, 19);
+    height: 100px;
+}
+
+h3{
+    text-align: center;
+    padding-top: 5%;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    float: left;
+    width: 20%;
+}
+
+li a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+li a:hover{
+    background: black;
+}
+
+section{
+    background: rgba(46, 46, 177, 0.616);
+    height: 550px;
+
+}
+
+article{
+    background: rgba(92, 92, 247, 0.616);
+    height: 66px;
+    width: 50%;
+}
+
+footer{
+    background: rgba(141, 39, 8, 0.616);
+    height: 75px;
+}
+
+nav,footer{
+
+    color: #a93226;
+}
+
+.jaune{
+    background: rgb(225, 240, 18);
+}
+
+.toto{
+    width: 50%;
+}
+
+.center{
+    margin: 0 auto;
+}
+
+#noir{
+    background: rgb(0, 0, 0);
+    width: 50%;
+    float: right;
+}
