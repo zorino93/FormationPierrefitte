@@ -1,0 +1,97 @@
+body{
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #333;
+    background: url(https://s3-us-west-2.amazonaws.com/en-samurai-gamers-images/wp-content/uploads/2017/12/20082239/Arena-of-Valor-Banner-3.jpg) no-repeat center /100% 100%;
+}
+
+h1{
+    text-align: center;
+    margin: 0 auto;
+    width: 30%;
+    border-radius: 2px;
+    background:  rgba(255, 255, 255, 0.527);
+    margin-bottom: 20px;
+}
+
+fieldset{
+    width: 50%;
+    padding: 10px;
+    margin: 0 auto; /* 20px ( en haut), 0px ( a droite), 20px ( en bas), 0px ( a gauche)*/
+}
+
+fieldset:hover{
+    box-shadow: 0 0 20px #444;
+}
+
+.vert{
+    background: rgba(20, 135, 202, 0.6);
+}
+
+.vert label{
+     color: #fff;
+     width:200px;
+     display: inline-block;
+     padding: 10px 0 15px 40px;
+}
+
+.vert input{
+    width: 300px;
+    height: 20px;
+}
+
+
+.rose{
+    background: rgba(16, 117, 212, 0.6);
+    margin-bottom: 20px;
+}
+
+.rose label{
+    color: #fff;
+     width: 200px;
+     display: inline-block;
+     padding: 10px 0 10px 40px;
+}
+
+.rose input{
+     width: 300px;
+     height: 20px;
+}
+
+
+legend{
+    background: rgb(255, 255, 255);
+    color: rgb(27, 26, 26);
+    font-size: 18px;
+    font-weight: 900; /*épaisseur de police*/
+    text-transform: uppercase;
+}
+
+input[type=checkbox], input[type=radio]{
+    width: 30px;
+}
+
+input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, input[type=password]:focus, input[type=date]:focus, input[type=textarea]:focus{
+    border: 5px solid rgba(59, 16, 16, 0.459);
+}
+
+input[type=submit]{
+    width: 20%;
+    color: #fff;
+    background: rgb(7, 77, 117);
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-left:55.6%;
+}
+
+input[type=submit]:hover{
+    background: rgb(0, 4, 61);
+}
+
+input[type=image]{
+    width: 200px;
+    height: 200px;
+}

@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    text-align: center;
+    margin: 0 auto;
+}
+
+body{
+    background: url(../img/font.jpg) no-repeat center /100% 100%;
+    height: 1600px;
+}
+
+header{
+
+}
+
+.title{
+    color: white;
+    text-transform: uppercase;
+    background: red;
+    margin-bottom: 5%;
+    font-size: 60px
+}
+
+.cité1{
+    width: 50%;
+}
+
+.logo{
+    margin-right: 93%;
+    width: 4%;
+}
+
+nav{
+    background: rgb(2, 148, 51);
+    height: 40px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 1px;
+    padding-left: 500px;
+    margin-right: 20%;
+}
+
+li{
+    margin-bottom: 5%;
+    float: left;
+    width: 20%;
+}
+
+li a{
+   text-decoration: none;
+   display:inline-block;
+   padding: 10px 10px;
+
+}
+
+li a:hover{
+    background:rgb(224, 49, 49);
+}
+
+.info{
+    color:white;
+}
+
+.title2{
+    margin-top: 5%;
+    font-size: 40px;
+    background: rgb(228, 85, 85);
+    color: rgb(15, 187, 15);
+    padding-top: 15px;
+    width: 40%;
+}
+
+
+.azzedine{
+margin-top: 5%;
+ width: 40%;
+ background: rgb(182, 178, 178);
+ height: 165px;
+}
+
+.za{
+    background: rgb(182, 178, 178);
+}
+.zahia{
+margin-top: 5%;
+ width: 40%;
+ background: rgb(182, 178, 178);
+ height: 165px;
+}
+
+.zah{
+    width: 16%;
+}
+

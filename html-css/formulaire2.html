@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="descriptif de mon site">
+    <!-- informations sur l'auteur -->
+    <meta name="author" content="Groot">
+    <title>Mon magnifique site</title>
+    <link rel="stylesheet" href="css/formulaire2.css">
+</head>
+
+<body>
+    <h1>Mon premier formulaire</h1>
+
+    <form>
+        <fieldset class="vert">
+            <legend>Information personnelles:</legend>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" autofocus required>
+            <br>
+            <!--Ajouter un label et un champ email-->
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+            <br>
+            <!--Ajouter un label et un champ telephone-->
+            <label for="tel">Tel:</label>
+            <input type="tel" name="tel" id="tel">
+            <br>
+            <!--Ajouter un label et un champ mot de passe-->
+            <label for="password">password:</label>
+            <input type="password" name="password" id="password" required>
+            <br>
+        </fieldset>
+
+        <fieldset class="rose">
+
+            <legend>DATE & TEXTAREA & SELECT</legend>
+
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date">
+            <br>
+
+            <label for="time">heure de naissance</label>
+            <input type="time" name="time" id="time">
+            <br>
+
+            <label for="text">adresse</label>
+            <input type="text" name="text" id="text">
+            <br>
+
+            <label for="image">profil</label>
+            <input type="image" src="https://mobilegamerhub.com/arena-of-valor/wp-content/uploads/sites/9/2017/06/Valhein.png" name="image"
+                id="image">
+            <br>
+
+            <label for="select">Select</label>
+            <select name="select" id="select">
+                <option>Selectionner un pays</option>
+                <optgroup label="Europe">
+                    <option value="France">France</option>
+                    <option value="Allemagne">Allemagne</option>
+                    <option value="Belgique">Belgique</option>
+
+                </optgroup>
+                <optgroup label="Afrique">
+                    <option value="Mauritanie">Mauritanie</option>
+                    <option value="Mali">Mali</option>
+                    <option value="Gabon">Gabon</option>
+                </optgroup>
+            </select>
+            <br>
+
+
+            <label for="textarea">Message:</label>
+
+            <textarea name="textarea" id="textarea" cols="80" rows="10"></textarea>
+            <br>
+
+        </fieldset>
+
+        <!--Ajouter un bouton d'envoi avec "Envoyer" comme texte-->
+        <input type="submit" value="Envoyer" name="button" id="button">
+
+    </form>
+
+</body>
+
+</html>
