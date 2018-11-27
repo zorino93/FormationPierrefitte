@@ -1,0 +1,16 @@
+body{
+    /*background: linear-gradient(red,orange,yellow,green,rgb(0, 153, 255),rgb(162, 19, 228),rgb(220, 38, 236),)*/
+    height:950px;
+  width:300px;
+  background:radial-gradient(at 50% 100%,
+    transparent 45%,
+     hsl(0, 100%, 50%),
+      hsl(51, 100%, 50%),
+     hsl(102, 100%, 50%),
+     hsl(153, 100%, 50%),
+     hsl(204, 100%, 50%),
+     hsl(255, 100%, 50%),
+    hsl(306, 100%, 50%),
+    transparent 70%)
+
+}

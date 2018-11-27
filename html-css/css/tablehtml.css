@@ -1,0 +1,30 @@
+*{
+}
+
+body{
+    width: 50%;
+    margin: auto;
+}
+
+table{
+    
+}
+
+th{
+    width: 25%;
+    padding: 5px;
+    background: #e6e6fa;
+    border: 1px dotted  #6a5acd;
+}
+
+td{
+    text-align: center;
+    padding: 5px;
+    border: 1px dashed #6a5acd;
+
+}
+
+td:first-child{
+    text-align: left;
+     background: #e6e6fa;
+}

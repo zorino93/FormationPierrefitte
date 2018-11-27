@@ -1,0 +1,47 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    width: 50%;
+    margin: auto;
+}
+
+caption{
+    background: #e6e6fa;
+    font-size: 30px;
+}
+
+thead{
+    background: #35e9b3;
+    border: 2px solid #0e0e0f;
+}
+
+tbody{
+    border: 1px solid  #0e0e0f;
+    background: #35e9b3;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+th{
+    width: 25%;
+    padding: 5px;
+    background: #e6e6fa;
+    border: 1px dotted  #0e0e0f;
+}
+
+td{
+    font-size: 100%;
+    text-align: center;
+    padding: 5px;
+    border: 1px dashed #0e0e0f;
+
+}
+
+td:first-child{
+    text-align: left;
+     background: #39be96;
+}
