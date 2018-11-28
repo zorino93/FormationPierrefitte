@@ -1,0 +1,80 @@
+body{
+    background: rgb(243, 158, 158);
+}
+
+h1{
+    font-size: 7em;
+    width: 10%;
+    margin-left: 27%;
+    border-radius: 10%;
+    background: #ffc300;
+    text-align: center;
+}
+
+section{
+    width: 60%;
+    margin: 0 auto;
+}
+
+td{
+    width: 4em;/* 1em= 16px */
+    height: 4em;
+}
+
+.black{
+    background: black;
+}
+
+.brown1{
+    background: rgb(50,36,27);
+}
+
+.brown2{
+     background: rgb(66,50,35);
+}
+
+.brown3{
+     background: #c70039;
+}
+
+.brown4{
+     background: #900c3f;
+}
+
+.brown5{
+     background: rgb(129,81,45);
+}
+
+.brown6{
+     background: rgb(150,92,46);
+}
+
+
+
+.white{
+     background: rgb(255, 255, 255);
+}
+
+.yellow{
+     background: #ffc300;
+}
+
+.rose{
+    background: rgb(253,170,126);
+}
+
+.beige{
+    background: rgb(254,154,102);
+}
+
+.vert1{
+    background: #004b35;;
+}
+
+.vert2{
+    background: #007c59;
+}
+
+.vert3{
+    background: #00956b;
+}

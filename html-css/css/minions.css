@@ -1,0 +1,41 @@
+body{
+    background: pink;
+}
+
+section{
+    width: 60%;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 100px;
+    text-align: center;
+    width: 65%;
+    font-family: fantasy;
+    color: rgb(250, 115, 25);
+}
+
+td{
+    width: 4em;/* 1em= 16px */
+    height: 4em;
+}
+
+.yellow{
+    background: yellow;
+}
+
+.grey{
+    background: grey;
+}
+
+.black{
+    background: black;
+}
+
+.white{
+    background: white;
+}
+
+.bleu{
+    background:blue;
+}
