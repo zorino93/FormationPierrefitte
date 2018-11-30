@@ -1,0 +1,62 @@
+#conteneur{ 
+    width: 960px; 
+    background: pink; 
+    color: white; 
+    margin: 0 auto; 
+}
+
+header { 
+    background: purple; 
+    height: 60px; 
+    line-height: 60px; 
+    text-align: center; 
+}
+
+nav {
+    background: blue; 
+    height: 30px; 
+    line-height: 30px; 
+    text-align: center; 
+}
+
+section{ 
+    height: 500px; 
+    background: gray; 
+    margin: 10px; }
+
+.A { 
+    border: 1px solid; 
+    float: left; 
+    height: 248px; 
+    width: 468px; 
+}
+
+.a { 
+    border: 1px solid; 
+    float: left; 
+    height: 122px; 
+    line-height: 122px; 
+    text-align: center; 
+    width: 232px;
+ }
+
+.B_rouge{ 
+    background: red;
+ }
+
+.B_jaune{
+     background: orange; 
+    }
+
+.B_verte{ 
+    background: green;
+ }
+.B_marron{
+    background: brown;
+ }
+footer { 
+    background: silver;
+    height: 70px;
+    line-height: 70px; 
+    text-align: center; 
+}
