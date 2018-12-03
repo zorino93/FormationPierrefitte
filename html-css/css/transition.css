@@ -1,0 +1,93 @@
+body{
+    font-size: 1.5em;
+    font-family: sans-serif;
+}
+
+.contener{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.gauche, .droite{
+    margin-top: 5em;
+}
+
+ul{
+    list-style: none;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.gauche ul{
+    margin: 3.4em 0 0 0;
+}
+
+.gauche ul li{
+    width: 10em;
+    padding: 1em;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.gauche ul li:first-child{
+    border-top: 1px solid #ccc;
+}
+
+/* Fin de la première colonne */
+
+.liste ul li{
+    /* Selectionne tous les <li> de la liste <ul> ayant la classe "liste" */
+    border-left: 1px solid #ccc;
+}
+
+/* Selectionne tous les <li> de la liste <ul> ayant la classe change, 
+elle-même enfant(à l'intérieur) d'une classe droite */
+
+.droite .change ul li{ 
+    width: 10em;
+    padding: 1em;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+/* Selectionne le premier <li> de la liste <ul> ayant la classe "change", 
+elle-même enfant de la classe "droite" */
+
+.droite .change ul li:first-child{
+    color: #fff;
+    font-weight: 900;
+    background: #5d5d5d;
+}
+
+/* Selectionne le dernier <li> de la liste <ul> ayant la classe "change", 
+elle-même enfant de la classe "droite" */
+
+.droite .change ul li:last-child{
+    border-bottom: 1px solid #ccc;
+}
+
+/* Selectionne le 5ème élément de la liste */
+.droite .change ul li:nth-child(5){
+    background: red;
+}
+
+.droite .change ul:hover{
+    cursor: pointer;
+    transform: scale(1.4);
+    transition-duration: 2s;
+    background: linear-gradient(#d5d5d5, #8a8a8a);
+}
+
+.droite .change ul:hover li:first-child{
+    background: #000;
+}
+
+.video, .carte{
+    width: 48%;
+    float: left;
+}
+

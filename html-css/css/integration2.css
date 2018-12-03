@@ -30,5 +30,9 @@ padding-top: 20px;/*hauteur de l'image de fond*/
 padding-right: 20px;
  color:#9d998f;
  text-decoration:none;
- /* text-align:center; */
+
+}
+
+a:hover{
+    color: brown;
 }
