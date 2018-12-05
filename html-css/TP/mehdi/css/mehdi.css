@@ -1,0 +1,133 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+header{
+    float: left;
+    margin-left: 40%;
+    padding-top: 70px;
+    width: 20%;
+    text-align: center;
+}
+
+.titre2{
+    font-size: 12px;
+    color: brown;
+}
+
+.nav1 {
+    width: 123%;
+    margin:0;
+    padding-top:10px;
+    list-style-type:none;
+ }
+
+.nav1 .nav2 a {
+ /* display:block; */
+ float:left;   
+ width:20%; /*hauteur de l'image de fond*/
+ color:#000;
+ text-decoration:none;
+ text-align: center;
+ font-style: italic;
+ }
+
+ section{
+   width: 960px;
+   margin: 0 auto;
+}
+
+
+.plate{  
+  float: left;
+}
+
+.hr{
+    width: 26%;
+    position: absolute;
+    left: 49%;
+}
+.text1{
+    width: 100%;
+    float: right;
+    font-size: 16px;
+    padding-top: 35px;
+    font-style: italic;
+}
+
+.text2{
+    margin-top: 40%;
+    font-style: italic;
+}
+.bar2{
+    margin-right: 5%;
+    font-style: italic;
+}
+.text3{
+    font-style: italic;
+    margin-top: 40%;
+    margin-left: 5%;
+}
+
+.bar{
+    margin-left: 5%;
+    font-style: italic;
+}
+
+
+
+.gauche{
+    float: left;
+    width: 480px;
+}
+.droite{
+    float: left;
+    width: 480px;
+}
+.test{
+    margin-top: 20%;
+    text-align: right;
+    list-style: none;
+}
+
+.test2 {
+    color: #000;
+    text-decoration: none;
+    font-style: italic;
+}
+
+.clear{
+    clear: both;
+}
+
+.img{
+   padding: 40px 0 40px 0;
+    margin-left: 40%;
+}
+
+.hr2{
+    width: 19%;
+    position: absolute;
+    left: 40%;
+
+}
+
+.test3{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.footer{
+    margin-bottom: 10%;
+}
+
+.h2{
+    font-size: 40px;
+}
+
+.note{
+    background: grey;
+    width: 35%;
+}

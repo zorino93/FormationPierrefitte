@@ -36,3 +36,16 @@ padding-right: 20px;
 a:hover{
     color: brown;
 }
+
+.clear{
+    clear: both;
+}
+
+.hal1, .p1{
+    background: #000;
+    color: #fff;
+    width: 45%;
+     float: left;
+   margin: 10px;
+}
+

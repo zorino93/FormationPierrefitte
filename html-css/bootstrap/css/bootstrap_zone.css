@@ -1,0 +1,51 @@
+.container{
+     background: #ccc;
+    height: 100px;
+}
+
+
+.col-12{
+    height: 200px;
+    border: 1px solid #000;
+    text-align: center;
+}
+.col-2{
+    height: 30px;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+.col8, .col9{
+    height: 40px;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+.col-8{
+     height: 200px;
+     border-left: 1px solid #000;
+    text-align: center;
+}
+
+.col4{
+    height: 200px;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+.col2{
+    height: 30px;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+.col3{
+     height: 40px;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+.col5{
+    height: 30px;
+    text-align: center;
+}
