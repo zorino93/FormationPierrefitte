@@ -1,0 +1,199 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.container{
+    border: 1px solid #000;
+    padding:0;
+}
+
+section{
+    padding: 10px;
+}
+
+.responsive{
+    color:#fff;
+    height: 100px;
+    background: red;
+}
+
+nav{
+    height: 30px;
+    text-align: center;
+    background: rgb(128, 4, 4);
+}
+
+nav a:hover{
+    color:#fff;
+}
+
+.clear{
+    clear: both;
+}
+
+.un, .quatre{
+    background: repeating-linear-gradient(to right, purple, rgb(2, 186, 241), rgb(11, 197, 151));/* Créé un dégradé circulaire*/
+    width: 45em;
+    height: 45em;
+    margin: 0 auto;
+}
+
+
+
+.un, .trois{
+    float: left;
+    width: 49%;
+    height: 300px;
+    margin-bottom: 15px;
+}
+
+ 
+
+.deux, .quatre{
+    float: right;
+    width: 49%;
+    height: 300px;
+}
+
+.trois, .deux{
+    background: #73adce;
+}
+
+
+.footer{
+    height: 50px;
+    background: rgb(128, 4, 4);
+}
+
+/* commencer de la plus petite à la plus grande en taille "px" avec min-width et max-width de la plus grande à la plus petite taille */
+@media screen and (max-width: 1024px){
+    .responsive{
+        background: red;
+    }
+    .responsive2{
+        background: rgb(0, 140, 255);
+    }
+
+    .un{
+        background: rgb(255, 123, 0);
+        background: url(https://cdnfr1.img.sputniknews.com/images/102665/38/1026653852.jpg)no-repeat center /100% 100%;
+    }
+
+    .deux{
+        background: rgb(51, 255, 0);
+    }
+
+    .trois{
+        background: rgb(3, 3, 248);
+    }
+
+    .quatre{
+        background: rgb(255, 0, 179);
+    }
+
+    .footer{
+        background: rgb(238, 255, 0);
+    }
+}
+
+@media screen and (max-width: 960px){
+    .responsive{
+        background: rgb(0, 238, 255);
+    }
+
+    .responsive2{
+        background: rgb(255, 123, 0);
+    }
+
+    .un{
+        background: rgb(0, 4, 255);
+    }
+
+    .deux{
+        background: rgb(255, 17, 0);
+
+    }
+
+    .trois{
+        background: rgb(109, 3, 248);
+    }
+
+    .quatre{
+        background: rgb(0, 174, 255);
+    }
+
+    .footer{
+        background: rgb(0, 255, 13);
+    }
+}
+
+@media screen and (max-width: 798px){
+      .responsive{
+        background: rgb(0, 238, 255);
+    }
+
+    .responsive2{
+        background: rgb(255, 123, 0);
+    }
+
+    section{
+}
+
+    .un{
+        background: rgb(0, 4, 255);
+    }
+
+    .deux{
+        background: rgb(255, 17, 0);
+        margin-bottom: 10px;
+    }
+
+    .trois{
+        background: rgb(109, 3, 248);
+    }
+
+    .quatre{
+        background: rgb(0, 174, 255);
+    }
+
+    .footer{
+        background: rgb(0, 255, 13);
+    }
+}
+
+@media screen and (max-width: 500px){
+      .responsive{
+        background: rgb(0, 238, 255);
+        padding: 0;
+    }
+
+    .responsive2{
+        background: rgb(255, 123, 0);
+    }
+
+    .un{
+        background: rgb(0, 4, 255);
+        width: 100%;
+    }
+
+    .deux{
+        background: rgb(255, 17, 0);
+        width: 100%;
+    }
+
+    .trois{
+        background: rgb(109, 3, 248);
+        width: 100%;
+    }
+
+    .quatre{
+        background: rgb(0, 174, 255);
+        width: 100%;
+    }
+
+    .footer{
+        background: rgb(0, 255, 13);
+        width: 100%;
+    }
+}

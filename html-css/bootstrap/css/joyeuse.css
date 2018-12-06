@@ -2,15 +2,21 @@
 text-align: center;
 }
 
-/* .container{ 
+.container{ 
     border:1px solid #000;
-    height: 850px;
-    width: 35%;
-}*/
+    padding:0;
+}
 
 .text{
-    margin-top: 5%;
-    margin-bottom: 3%;
+    color: grey;
+    font-weight: bold;
+    margin-right: 200px;
+    padding: 30px 0px 30px 0px;
+}
+
+.toto{
+    margin-left: 238px;
+    padding: 30px 0px 30px 0px;
 }
 
 .lien{
@@ -21,3 +27,16 @@ a{
     border-bottom: 1px solid blue;
 }
 
+@media screen and (max-width:360px){
+
+    .text{
+        margin-left: 155px;
+        width:100%;
+    }
+
+    .text{
+        width:100%;
+        margin-left:250px;
+    }
+
+}
