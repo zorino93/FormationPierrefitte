@@ -1,595 +1,281 @@
 @import url('https://fonts.googleapis.com/css?family=Caveat+Brush');
 
-*{
-    margin:0;
-    padding:0;
-    font-family:'Caveat Brush', cursive;
+/* ---- header ---- */
+/* 1. Mettre Nav en position absolute
+2. Ajouter la propriété bottom:50px; sur nav
+3. Ajouter la propriété position:relative sur header;
+4. enlever position relative header et ajouter sur body
+*/
+
+/*----- Balises -----*/
+body{
+    background: #9FC5B6;
 }
-
-
- /* --- section --- */
-
-section{
-     width: 960px;
-     margin:0 auto;
-     background: url(../img/pattern.jpg) transparent;
- }
-
-/* --- bannière --- */
 header{
-    background: url(../img/woddPlank.jpg) no-repeat center /100% 100%;
-    height: 500px;
+    position: relative;
+    background-image: url('../img/woddPlank.jpg');
 }
 
-/* --- titre --- */
+nav{
+    top:40px;
+    position: absolute;
+    right: 25px;
+}
+nav a{
+    margin:30px;
+    font-size:30px;
+    color:black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Caveat Brush', cursive;
+}
+nav li{
 
+}
+
+.logoResto{
+    position: relative;
+    display: inline-block;
+    margin-left: 80px;
+}
 
 h1{
-    float: left;
-    padding-top: 6px;
-    font-size: 43px;
-    margin-left: 68px;
+    font-family: 'Caveat Brush', cursive;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+h1 span{
+    font-size: 40px;
+    display: inline;
+    vertical-align: top;
+    position: relative;
+}
+h1 span:after{
+    top: 15px;
+    content: "-";
+    position: absolute;
+    left: 0;
+}
+h2{
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: sans-serif;
+}
+#story h2{
+    font-size: 55px;
 }
 
-.hr1{
-    margin-top: 5px;
-    margin-left: 32px;
-    width: 20px;
-    height: 5px;
-    background: pink;
+/*Class pour les traits Roses*/
+.rectRose{
+    bottom: 12px;
+    position: absolute;
+    margin: 0;
+    display: block;
+    border: 7px solid #E53F6F;
+    padding: 0 17px;
+    width: 0px;
+    left: 26%;
+}
+section .rectRose{
+    position: inherit;
+    margin: auto;
+    left: 0;
+    bottom:15px;
 }
 
-/* --- logo --- */
+/* Default icon formatting */
+i{
+    margin-top: 5vw;
+    display: inline-block;
+    font-style: normal;
+    position: relative;
+}
+/* Additional formatting for arrow icon */
+i#fleche{
+    top: 4vw;
+    left: -7vw;
+    width: 3.4em;
+    height: 3.4em;
+    border-right: 0.3em solid #d4276d;
+    border-top: 0.3em solid #d4276d;
+    transform: rotate(134deg);
+}
 
-.carrer{
-        float: left;
-    /* display: inline-block; */
+/*----- Class ------*/
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*----- Id -----*/
+#logo{
+    width: 300px;
+    margin:auto;
+    position: relative;
+    margin-top: 250px;
+    padding-bottom: 250px;
+}
+#logo div{
     width: 0;
     height: 0;
-    border-left: 157px solid transparent;
-    border-right: 0px solid transparent;
-    border-top: 143px solid pink;
-    margin-top: 19%;
-    margin-left: 20%;
+    border-top: 250px solid #E53F6F;
+    border-left: 250px solid transparent;
 }
-
-.cerf{
+#logo img{
+    top: -27px;
     position: absolute;
-    left: 43%;
-    top: 18%;
-}
-
-
-/* --- navigation --- */
-
-.nav1 {
-    margin:0;
-    padding-top:18px;
-    list-style-type:none;
-    padding-left: 71%;
- }
-
-.nav1 .nav2 a{
- /* display:block; */
- float:left;   
- width:25%; /*hauteur de l'image de fond*/
- color:#000;
- text-decoration:none;
- text-align: center;
- }
-
- .nav2 a:hover{
-     color:red;
- }
-
- /* --- section  --- */
-
-
- .gauche1{
-    float: left;
-    width: 487px;
-}
-
-
-.gauche{
-    float: left;
-    width: 487px;
-}
-
-.droite{
-    float: left;
-    width: 375px;
-}
-
-.droite1{
-    float: left;
-    width: 196px;
-    margin-left: 194px;
-}
-
-
-
-.img1{
-    height: 429px;
-    width: 126%;
-}
-
-.img2{
-    height:500px;
     width: 100%;
 }
 
-.text2{
+.inlineB{
+    display: inline-block;
+}
+
+/* ---------- */
+
+section img{
+    width: 100%;
+}
+section > section{/*cible la/les <section> enfant direct de <section> les autres <section> qui sont des sous-enfants seront ignorées */
+    overflow: hidden;
+    height: 106vh;
     text-align: center;
-
+    background: white;/*antiquewhite*/
 }
-
-.hr2{
-    margin-top: 16px;
-    height: 8px;
-    background: pink;
-    width: 27px;
-    margin-left: 83px;
+section p, section h2{
+    padding: 0 15%;
 }
-
-.hr3{
-    margin-top: 16px;
-    height: 8px;
-    background: pink;
-    width: 27px;
-    margin-left: 225px;
+.pBloque-left, .pBloque-right{
+    display: inline-block;
+    vertical-align: middle;
+    /*height: 820px;*/
+    overflow: hidden;
 }
-
-
-h2{
-    text-align: center;
+.pBloque-left{
+    width: 40%;
+    overflow: visible;
+    position: relative;
 }
-
-.barr{
-    text-align: center;
-    font-size: 12px;
+.pBloque-right{
+    width: 60%;
 }
-
-.bar{
-    text-align: center;
-    margin-left: 40%;
-    margin-right: 16%;
+#story img{
+    transform: scaleX(-1);
+    width: 125%;
 }
-
-.text2{
-    text-align: center;
-    padding-top: 120px
+#soap .pBloque-left{
+    width: 30%;
 }
-
-.text3{
-    text-align: center;
-    padding-top: 104px
+#soap .pBloque-right{
+    width: 70%;
 }
-
-
-.fa {
-    font-size: 90px !important;
-    top: 45%;
-    right: 48%;
-    position:absolute;
+#soap{
+    height: 900px;
 }
-
-
-
-@media screen and(max-width:1024px){
-
-     h1{
-    
+/*#soap .pBloque-left{
+width: 83%;
 }
-
-.hr1{
-    
-}
-
-/* --- logo --- */
-
-.carrer{
-       
-}
-
-.cerf{
-    
-}
-
-
-/* --- navigation --- */
-
-.nav1 {
-    
+#soap .pBloque-right{
+width: 17%;
+}*/
+#story div {
+    transform: scaleX(-1);/*
+    La propriété CSS3 transform permet de manipuler un élément HTML sur les axes X et Y (horizontal et vertical)
+    La fonction scale - transform: scale(x,y);
+    Cette fonction permet d'agir sur l'échelle (les dimensions) de l'élément. La valeur initiale est 1, tandis que les valeurs supérieures à 1 créent un effet d'agrandissement, et les valeurs inférieures créent un effet de réduction.
+    Les valeurs peuvent être négatives.
+    La valeur y est optionnelle et sera égale à la valeur de x si elle est non renseignée,*/
+    height: 100%;
+    background-image: url(../img/asperge.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
  }
-
-.nav1 .nav2 a{
- 
- 
- }
-
- /* --- section  --- */
-
-
- .gauche1{
-    
-}
-
-
-.gauche{
-    
-}
-
-.droite{
-   
-}
-
-.droite1{
-    
-}
-
-
-
-.img1{
-    
-}
-
-.img2{
-    
-}
-
-.text2{
-    
-
-}
-
-.hr2{
-    
-}
-
-.hr3{
-    
-}
-
-
-h2{
-    
-}
-
-.barr{
-    
-}
-
-.bar{
-    
-}
-
-.text2{
-    
-}
-
-.text3{
-    
-}
-
-.fa {
-   
-}
-
-
- }
-
-
-@media screen and(max-width:960px){
-
-
-     h1{
-    
-}
-
-.hr1{
-    
-}
-
-/* --- logo --- */
-
-.carrer{
-       
-}
-
-.cerf{
-    
-}
-
-
-/* --- navigation --- */
-
-.nav1 {
-    
- }
-
-.nav1 .nav2 a{
- 
- 
- }
-
- /* --- section  --- */
-
-
- .gauche1{
-    
-}
-
-
-.gauche{
-    
-}
-
-.droite{
-   
-}
-
-.droite1{
-    
-}
-
-
-
-.img1{
-    
-}
-
-.img2{
-    
-}
-
-.text2{
-    
-
-}
-
-.hr2{
-    
-}
-
-.hr3{
-    
-}
-
-
-h2{
-    
-}
-
-.barr{
-    
-}
-
-.bar{
-    
-}
-
-.text2{
-    
-}
-
-.text3{
-    
-}
-
-
-.fa {
-   
-}
-
-}
-
-
-@media screen and(max-width:798px){
-
-
-     h1{
-    
-}
-
-.hr1{
-    
-}
-
-/* --- logo --- */
-
-.carrer{
-       
-}
-
-.cerf{
-    
-}
-
-
-/* --- navigation --- */
-
-.nav1 {
-    
- }
-
-.nav1 .nav2 a{
- 
- 
- }
-
- /* --- section  --- */
-
-
- .gauche1{
-}
-
-
-.gauche{
-    
-}
-
-.droite{
-   
-}
-
-.droite1{
-    
-}
-
-
-
-.img1{
-    
-}
-
-.img2{
-    
-}
-
-.text2{
-    
-
-}
-
-.hr2{
-    
-}
-
-.hr3{
-    
-}
-
-
-h2{
-    
-}
-
-.barr{
-    
-}
-
-.bar{
-    
-}
-
-.text2{
-    
-}
-
-.text3{
-    
-}
-
-
-.fa {
-   
-}
-
-}
-
-
-@media screen and (max-width:500px){
-
-    
-     h1{
-    
-}
-
-.hr1{
-    
-}
-
-/* --- logo --- */
-
-.carrer{
-       
-}
-
-.cerf{
-    left: 93%;
-    top: 26%;
-}
-
-
-/* --- navigation --- */
-
-.nav1 {
-    
- }
-
-.nav1 .nav2 a{
- 
- 
- }
-
- /* --- section  --- */
-
-
- .gauche1{
-    
-}
-
-
-.gauche{
-    
-}
-
-.droite{
-   
-}
-
-.droite1{
-    
-}
-
-
-
-.img1{
-    
-}
-
-.img2{
-    
-}
-
-.text2{
-    
-
-}
-
-.hr2{
-    
-}
-
-.hr3{
-    
-}
-
-
-h2{
-    
-}
-
-.barr{
-    
-}
-
-.bar{
-    
-}
-
-.text2{
-    
-}
-
-.text3{
-    
-}
-
-
-.fa {
-   
-}
-
+    #local{
+        height: 755px;
+    }
+
+    .txtRose{
+        color: #E53F6F;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-family: sans-serif;
+    }
+    header .fa{
+        color:red;
+        background-color:white;
+        margin:10px;
+        padding:0 6px;
+        border-radius:10px;
+        transition: 1s;
+    }
+    header .fa:hover{
+        color:blue;
+        background-color:darkmagenta;
+        animation-name: clignote;
+        animation-duration: 0.6s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes clignote {
+        0%{
+            color:blue;
+            background-color:darkmagenta;
+        }
+
+        50%{
+            color:purple;
+            background-color:#2196F3;
+        }
+        100%{
+            color:blue;
+            background-color:darkmagenta;
+        }
+    }
+
+    /*p{
+    position: relative;
+}
+p:before{
+font-size: 200px;
+content:"-->";
+color: red;
+/*position: absolute;*/
+/*height: 15px;
+width: 15px;
+}*/
+.pBloque-left > img{
+    width: 50%;
+}
+#local .pBloque-left img{
+    position: relative;
+    top: 70px;
+    z-index: -1;
+}
+#eggs{
+    width: 100%;
+}
+/* footer */
+footer{
+    padding: 150px 0;
+    background-image: url('../img/pattern.jpg');
+}
+footer>div{
+    display: inline-block;
+    width: 50%;
+}
+footer p{
+    font-family: sans-serif;
+    text-transform: uppercase;
+    padding-left: 78px;
+    font-size: 0.9em;
+}
+#social ul{
+    float: right;
+    margin-right: 50px;
+}
+#social li{
+    display: inline-block;
+    text-align: right;
+    margin:0 5px;
+    color: #E53F6F;
 }
