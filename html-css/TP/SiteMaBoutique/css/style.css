@@ -80,3 +80,8 @@ text-align: right;
 .a1{
     padding-top: 10px;
 }
+
+.footer{
+    background: rgb(0, 153, 255);
+    color: white;
+}
