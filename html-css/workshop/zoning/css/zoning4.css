@@ -1,0 +1,105 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+#container{
+    width: 960px;
+    margin: 0 auto;
+}
+
+.bleu{
+border: 1px solid rgb(5, 5, 241);
+background: rgb(5, 5, 241);
+width: 20%;
+height: 100px;
+color: white;
+float: left;
+}
+
+.bleu1{
+border: 1px solid rgb(5, 5, 241);
+background: rgb(5, 5, 241);
+width: 20%;
+height: 100px;
+color: white;
+float: left;
+}
+.blanc{
+border: 1px solid;
+width: 59.30%;
+height: 100px;
+background:rgb(255, 255, 255);
+float: left;
+}
+
+.violet{
+border: 1px solid rgb(169, 4, 219);
+width: 99.73%;
+height: 100px;
+background:rgb(169, 4, 219);
+float: left;
+color: white;
+}
+
+.bleuheight{
+border: 1px solid rgb(5, 5, 241);
+width: 20%;
+height: 500px;
+background:rgb(5, 5, 241);
+float: left;
+color: white;
+}
+
+.turquoise{
+border: 1px solid rgb(4, 219, 198);
+width: 40.1%;
+height: 200px;
+background:rgb(4, 219, 198);
+float: left;
+color: white;
+}
+
+.orange{
+border: 1px solid rgb(255, 115, 0);
+width: 39.27%;
+height: 200px;
+background:rgb(255, 115, 0);
+float: left;
+color: white;
+}
+
+.jaune{
+border: 1px solid rgb(238, 255, 0);
+width: 79.55%;
+height: 150px;
+background:rgb(238, 255, 0);
+float: left;
+color: white;
+}
+
+.bleupetit{
+border: 1px solid rgb(5, 5, 241);
+width: 19.48%;
+height: 146px;
+background:rgb(5, 5, 241);
+float: left;
+color: white;
+}
+
+.blancpetit{
+border: 1px solid;
+width: 20%;
+height: 146px;
+background:rgb(255, 255, 255);
+float: left;
+}
+
+.turquoiselarge{
+border: 1px solid rgb(4, 219, 198);
+height: 50px;
+background:rgb(4, 219, 198);
+width: 99.75%;
+float: left;
+color: white;
+}
