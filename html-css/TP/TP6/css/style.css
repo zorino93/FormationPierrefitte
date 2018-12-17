@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.toto{
+background: url(../img/pattern8.jpg);
+height: 50px;   
+}
+
+
+.container{
+    width: 80%;
+}
+
+nav{
+    margin-top: 10%;
+}
+
+.act{
+    padding-left: 300px;
+}
