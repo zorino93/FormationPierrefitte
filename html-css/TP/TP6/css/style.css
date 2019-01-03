@@ -1,22 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Charm');
+
 *{
     margin: 0;
     padding: 0;
 }
 
-.toto{
-background: url(../img/pattern8.jpg);
-height: 50px;   
+
+.container-fluid{
+    width: 100%;
+    padding-left:0px !important;
+    padding-right: 0px !important;
 }
 
+section{
+    width: 960px;
+    margin: 0 auto;
+}
 
-.container{
-    width: 80%;
+.pattern1{
+    background: url(../img/pattern.jpg);
+    height: 239px;
+    position: relative;
+    bottom: 18px;
+}
+
+.pattern2{
+    background: url(../img/pattern2.jpg);
+    height: 239px;
+    position: relative;
+    bottom: 57px;
+}
+
+.wave{
+    background: url(../img/header_haut.png);
+    height: 100px;
+    position: relative;
+    bottom: 35px;
 }
 
 nav{
     margin-top: 10%;
+    background: #adc54f;
+}
+
+nav a{
+    font-family: 'Charm', cursive;
 }
 
 .act{
-    padding-left: 300px;
+    padding-left: 244px;
+}
+
+.banner img{
+    position: absolute;
+    bottom: 119px;
+    left: 41%;
+    height: 230px;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+    height: 300px !important;
+}
+
+#titre{
+    position: absolute;
+    bottom: 194px;
+    text-align: center;
+    left: 43.60%;
+ }
+
+h2{
+      font-size: 20px;
+      font-family: 'Charm', cursive;
+}
+
+.banner2{
+    border: dashed;
+    border-radius: 18px;
+}
+
+.carousel{
+    border: 10px solid #fff;
+    border-radius: 18px;
+    height: 320px;
+}
+
+.gauche{
+        margin-top: 57%;
+        border: 2px solid #fff;
+        box-shadow: -10px 10px 20px black;
+        background: white;
+        margin-left: 10%;
+        border-radius: 2%;
+}
+
+.droite{
+        margin-top: 57%;
+        border: 2px solid #fff;
+        box-shadow: -10px 10px 20px black;
+        background: white;
+        margin-left: 10%;
+        border-radius: 2%;
 }

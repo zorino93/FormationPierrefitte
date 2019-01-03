@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body, html{
+    height: 100%;
+}
+
+.parallax{
+    /* L'image de fond */
+    background: url(../img/ciel.jpg);
+    /* la hauteur de l'image */
+    height: 100%;
+    /* Les propriétés qui vont créé l'effet parallax */
+    background-attachment: fixed;/* Attache l'image par rapport à l'écran afin d'éviter qu'elle défile au moment du scroll*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2{
+    /* L'image de fond */
+    background: url(../img/pc.jpg);
+    /* la hauteur de l'image */
+    height: 100%;
+    /* Les propriétés qui vont créé l'effet parallax */
+    background-attachment: fixed;/* Attache l'image par rapport à l'écran afin d'éviter qu'elle défile au moment du scroll*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.scroll{
+    height: 280px;
+    font-size: 36px;
+}
+
+div.scroll p{
+    margin: 0;
+}
+
+#scroll-1{
+    background-image: url(../img/Matrix-revolution.jpg);
+}
+
+#scroll-2{
+    background-image: url(../img/sans-titre.png);
+}
+
+#scroll-3{
+    background-image: url(../img/thumb-1920-515590.jpg);
+}
+
+@media only screen and (max-device-width: 1366px){
+    .parallax{
+        background-attachment: scroll;
+    }
+}
