@@ -93,15 +93,9 @@ img{
     width: 77%;
 }
 
-.gauche img{
-  opacity: 1;
-  background:#fff;
-}
-
 .gauche img:hover{
-    height: 55%;
-    width: 25.8%;
-    
+  opacity: 0;
+  
 }
 
 
