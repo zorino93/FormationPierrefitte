@@ -8,7 +8,7 @@
  */
 
 /**
- * Les variables
+ * LES VARIABLES 
  * Une variable est un conteneur servant à stocker temporairement une information (ou donnée). En javascript on déclare une variable avec le mot-clé: "var" suivi du nom de la variable, chaque variable doit avoir un nom unique (également appeler en anglais "identifier").
  * Le nom d'une variable doit observer quelque règles à savoir:
  * Le nom d'une variable doit commencer par une lettre;
@@ -72,9 +72,9 @@ var desc = 'lorem ipsilum';
  * cependant si la valeur stocker contient elle même des apostrophes ou des guillemets il faudra les échapper au moyen d'un antislash(\ )
  */
 
-var dept = "Je suis du \"9.2\"";// Je suis dans des guillemets dons j'echappe l'guillemets
+var dept = "Je suis du \"9.2\"";// Je suis dans des guillemets dons j'echappe les guillemets
 
-var dept = 'Je suis du "9.2"'
+var dept = 'Je suis du "9.2"' + '<br>';
 
 document.write(dept + "<br>");
 
@@ -90,8 +90,8 @@ document.write(dept2 + '<br>');
  * pour affecter un booléen à une variable on utilise ni guillemet ni apostrophe. 
  */
 
-var vrai = true;
-var faux = false;
+var vrai = true; //Egale à 1
+var faux = false; //Egale à 0
 
 /**
  * Les autres types
@@ -106,14 +106,14 @@ var n = null,
 
 var tt = 25;//type number
 tt = true; // type boolean
-tt = 1.09; // type null
+tt = null; // type null
 tt = "tt"; // type string
 
 
 /**
  * Pour tester le type de la valeur, on utilise généralement la méthode "typeof()"
  */
-alert(typeof(tt));
+alert(typeof (tt));
 
 // déclarer une variable de manière explicite ou implicite
 var maVariable = 'toto';//"maVariable" est ce qu'on appelle une écriture camel case.
@@ -142,13 +142,13 @@ var unChiffre = "12";
 
 document.write(unChiffre + '<br>');//12
 
-document.write(typeof(unChiffre) + '<br>');//string
+document.write(typeof (unChiffre) + '<br>');//string
 
 unChiffre = parseInt(unChiffre);
 
 document.write(unChiffre + '<br>');//12
 
-document.write(typeof(unChiffre) + '<br>');//number
+document.write(typeof (unChiffre) + '<br>');//number
 
 
 //Méthode(ou fonction) parseFloat()
@@ -157,13 +157,13 @@ var nb_en_lettre = "12.22";
 
 document.write(nb_en_lettre + '<br>');//12.22
 
-document.write(typeof(nb_en_lettre) + '<br>');//string
+document.write(typeof (nb_en_lettre) + '<br>');//string
 
 nb_en_lettre = parseFloat(nb_en_lettre);
 
 document.write(nb_en_lettre + '<br>');//12.22
 
-document.write(typeof(nb_en_lettre) + '<br>');//number
+document.write(typeof (nb_en_lettre) + '<br>');//number
 
 //Méthode toString(), qui sert a convertir en chaîne de caractère
 

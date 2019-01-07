@@ -240,3 +240,125 @@ header .right a{
     border-bottom: 1px solid #bfbbbb;
      border-top: 1px solid #bfbbbb;
 }
+
+/*--- Page Inner --- */
+
+.top{
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    background:url(../img/hero_image.jpg);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-position: 50% 50%;
+}
+
+.work_nav{
+    display: block;
+    width: 100%;
+}
+
+.work_nav .btn{
+    float: right;
+}
+
+.work_nav ul{
+    list-style: none;
+}
+
+.work_nav ul li{
+    display: block;
+    float: left;
+    margin: 0 0 1px 1px;
+    position: relative;
+}
+
+.work_nav a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url(../img/p_navigation.png) no-repeat;
+    background-position: 0 0;
+}
+
+.work_nav a.previous{
+    background-position: 0 0;
+}
+
+.work_nav a.grid{
+    background-position: -41px 0;
+}
+
+.work_nav a.next{
+    background-position: -82px 0;
+}
+
+.top .title{
+    display: block;
+    width: 100%;
+    color: #4B4848;
+    font-family: 'raleway-bold', arial;
+    font-size:26px;
+    font-weight: 900;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    text-transform: uppercase;
+    line-height: 30px;
+    margin: 0 !important;
+    overflow: hidden;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    /* https://developper.mozilla.org/fr/docs/Web/CSS/box-sizing */
+}
+
+.content_header{
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    left: 50%;
+    margin-left: 26%;
+}
+
+.content{
+    color: #4B4848;
+    font-family: 'relaway-regular', arial;
+    font-size:15px;
+    line-height: 22px;
+    padding: 60px 30px;
+    background: #fff;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.content p{
+    color: #4B4848;
+     font-family: 'raleway-bold', arial;
+     font-size: 15px;
+     line-height: 24px;
+     margin-bottom: 60px;
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6{
+    color: #4B4848;
+    font-family: 'raleway-semibold', arial;
+    font-weight: bold;
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+
