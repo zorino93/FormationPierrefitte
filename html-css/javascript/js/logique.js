@@ -27,12 +27,13 @@ else {
  */
 
 
-if ((prenomLogin === prenom)) && (age === monAge){
+if ((prenomLogin === prenom) && (age === monAge)) {
 
     alert("Bienvenue M." + prenomLogin);
-    else {
-        alert("Prénom invalide");
-    }
+
+}
+else {
+    alert("Prénom invalide");
 }
 
 if ((A) && (B)) {
@@ -61,12 +62,12 @@ if ((A) || (B)) {
  * Cette opérateur rend vrai ce qui est faux est inversement
  */
 
- var user = true;
- if(!user){
-     //code si l'utilisateur n'est pas loggé
- }
+var user = true;
+if (!user) {
+    //code si l'utilisateur n'est pas loggé
+}
 
- // ce qui revient à écrire :
- if (user == false){
-     
- }
+// ce qui revient à écrire :
+if (user == false) {
+
+}

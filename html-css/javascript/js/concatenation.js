@@ -1,9 +1,9 @@
 //Variable de type String
-var tomtom = "225";
+var tomtom = "225"; 
 //variable type Boolean
-var toto = true;
+var toto = true; 
 //variable type Number
-var yancy = 1.09;
+var yancy = 1.09; 
 
 calcul = tomtom + ' ' + toto + ' ' + yancy;
 

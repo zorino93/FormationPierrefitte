@@ -62,7 +62,7 @@ var number3 = 1.09;
 /**
  * Le type String
  * Il va représenter les chaînes de caractères c'est à dire les textes.
- * Pour affecter une chaîne de caractère àune variable il faut l'entourer avec des guillemets ou apostrophes.
+ * Pour affecter une chaîne de caractère à une variable il faut l'entourer avec des guillemets ou apostrophes.
  */
 
 var texte = "lorem ipsum";
