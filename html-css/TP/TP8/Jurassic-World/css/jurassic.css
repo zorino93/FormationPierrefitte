@@ -3,14 +3,15 @@
     padding:0;
 }
 
-section{
-    background: white !important;
-}
-
 header{
     background: url(../img/dinosaure.jpg) no-repeat center /100% 100%;
-    height:700px;
 }
+
+section{
+    background: white !important;
+    width: 900px;
+}
+
 
 nav{
      background-color: rgba(8, 8, 8, 0.5);
@@ -33,7 +34,7 @@ nav li a{
     text-align: center;
     text-decoration: none !important;
     color:white;
-    margin-right: 93px;
+    margin-right: 64px;
 }
 
 nav li a:hover{
@@ -42,15 +43,19 @@ nav li a:hover{
     padding-top: 20px;
 }
 
+.En{
+    margin-left:-64px;
+}
+
 
 .btn1 a{
-    color: #fff;
-    background: #1C5F81;
-    border: 10px solid #1C5F81;
+    color: #fff ;
+    background: #1C5F81 ;
+    border: 10px solid #1C5F81 ;
 }
 
 .btn1 a:hover{
-    padding-top:1px;
+    padding-top:2px;
     color: #1C5F81;
     background: #fff;
     border: 10px solid #fff;
@@ -69,7 +74,7 @@ nav li a:hover{
 .clima{
     float: right;
     position: relative;
-    bottom: 223px;
+    bottom: 258px;
 }
 
 section{
@@ -81,11 +86,13 @@ h1{
     margin-top: 30px;
     text-align: center;
     width: 95%;
+    font-weight: 900;
+    font-size: 57px;
 }
 
 .entree{
     margin-top: 50px;
-    margin-left: 20%;
+    margin-left: 11%;
 }
 
 .text1{
@@ -118,13 +125,18 @@ width: 92%;
     text-decoration: none;
     background: #1C5F81;
     color: #fff;
-    border: 10px solid #1C5F81;
+    border: 16px solid #1C5F81;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-left: -30px;
 }
 
 .btn2 a:hover{
     color: #1C5F81;
     background: #fff;
-    border: 10px solid #fff;
+    border: 16px solid #fff;
+    padding-left: 35px;
+    padding-right: 35px;
 }
 
 .tarif1{
@@ -171,6 +183,11 @@ margin-left: 183px;
     margin-top: 4.4%;
 }
 
+iframe{
+    height: 500px;
+    width: 500px;
+}
+
 .partenaire{
     margin-top: 50px;
     text-align: center;
@@ -180,6 +197,7 @@ margin-left: 183px;
 .title2{
     font-size: 50px;
     padding-bottom: 50px;
+    font-weight: 700;
 }
 
 .img1{
@@ -236,11 +254,7 @@ margin-left: 20px;
 }
 
 .body1 {
-    height: 50%;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
-  font-weight: 100;
-  font-size: 12px;
-  line-height: 30px;
+  height: 50%;
   color: #777;
   background: rgb(39, 39, 39);
 }
@@ -366,3 +380,231 @@ fieldset {
 :-ms-input-placeholder {
   color: #888;
 }
+
+
+
+
+@media screen and (max-width: 1024px){
+
+    header{
+    background: url(../img/dinosaure.jpg) no-repeat center /100% 100%;
+}
+
+section{
+    background: white !important;
+    width: 900px;
+}
+
+
+nav{
+     background-color: rgba(8, 8, 8, 0.5);
+    height: 100px;
+    position: fixed;
+    width: 99.5%;
+}
+
+
+.En{
+    margin-left:-64px;
+}
+
+
+.btn1 a{
+    color: #fff ;
+    background: #1C5F81 ;
+    border: 10px solid #1C5F81 ;
+}
+
+.btn1 a:hover{
+    padding-top:2px;
+    color: #1C5F81;
+    background: #fff;
+    border: 10px solid #fff;
+}
+
+.fas{
+    transform: rotate(500deg) !important;
+}
+
+.logo1{
+    margin-left: 6%;
+    height: 280px;
+    width: 306px;
+}
+
+.clima{
+    float: right;
+    position: relative;
+    bottom: 67px;
+    width: 90px;
+}
+
+section{
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1{
+    margin-top: 30px;
+    text-align: center;
+    width: 95%;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.entree{
+    margin-top: 50px;
+    margin-left: -10%;
+    width: 116%;
+}
+
+.text1{
+    width: 100%;
+    margin-left: -11%;
+    margin-top: 20px;
+    padding-bottom: 50px;
+}
+
+.text3{
+    margin-bottom: 20px;
+}
+
+.text2{
+text-align: center;
+width: 92%;
+
+}
+
+.title1{
+    padding-bottom: 40px;
+}
+
+.btn2{
+    margin-top: 20px;
+    margin-left: 42%;
+}
+
+.btn2 a{
+    text-decoration: none;
+    background: #1C5F81;
+    color: #fff;
+    border: 16px solid #1C5F81;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-left: -80px;
+}
+
+.btn2 a:hover{
+    color: #1C5F81;
+    background: #fff;
+    border: 16px solid #fff;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.tarif1{
+    margin-top:10%;
+    margin-top: 45%;
+    width: 226%;
+    margin-left: -193px;
+}
+
+
+.btn3{
+    padding-top: 20px;
+}
+
+.btn3 a{
+    text-decoration: none;
+    background: #1C5F81;
+    color: #fff;
+    border: 10px solid #1C5F81;
+}
+
+.btn3 a:hover{
+    color: #1C5F81;
+    background: #fff;
+    border: 10px solid #fff;
+}
+
+
+hr{
+    margin-top: 40px;
+    background: grey;
+    width: 30%;
+}
+
+.horaire{
+    margin-top: 40px;
+    margin-left: -180px;
+
+}
+
+.tarif{
+float: left;
+width: 45%;
+margin-left: 183px;
+}
+
+
+.plan{
+    margin-top: 4.4%;
+}
+
+iframe{
+    height: 400px;
+    width: 250px;
+}
+
+.partenaire{
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 66px;
+    margin-right: 77px;
+}
+
+.title2{
+    font-size: 40px;
+    padding-bottom: 50px;
+    font-weight: 700;
+    margin-right: 19px;
+}
+
+.img1{
+    margin-left: 11px;
+}
+
+footer{
+    background: black;
+    width: 100%;
+    height: 400px;
+}
+
+.img2{
+    padding-top: 2%;
+ margin-left: 10%;
+}
+
+.logo2{
+margin-left: 20px;
+}
+
+.text4{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+    margin-left: 10%;
+}
+
+.nav1{
+    margin-left: 10%;
+    list-style-type: none;
+}
+
+.nav1 li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+}
+
