@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jurassic Park</title>
+    <!-- Style Bootstrap + FontAwesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="css/jurabootstrap.css">
+
+    <!-- Script Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- Cette mise en page utilise essentiellement les grilles(grid) de Bootstrap -->
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navigation fixed-top" id="mainNav">
+        <div class="container">
+            <!-- Menu en mode mobile -->
+            <button class="navbar-toggler hamburger" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" arial-expanded="false" arial-label="Toggle navigation">
+                <span class="navbar-toggle-icon">
+                    <i class="fas fa-bars"></i>
+                    menu
+                </span>
+            </button>
+
+            <!-- On a centrer la navigation grâce à la classe offset de boostrap -->
+            <div class="collaspe navbar-collapse col-md-10 offset-md-1" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto menu">
+                    <li class="nav-item"><a href="#presentation" class="nav-link js-scroll trigger">L'EXPOSITION</a></li>
+                    <li class="nav-item"><a href="" class="nav-link js-scroll trigger">INFOS PRATIQUE</a></li>
+                    <li class="nav-item"><a href="" class="nav-link js-scroll trigger">FAQ</a></li>
+                    <li class="nav-item"><a href="" class="nav-link js-scroll trigger">AVIS</a></li>
+                    <li class="nav-item"><a href="" class="nav-link js-scroll trigger">PRESS</a></li>
+                    <li class="nav-item"><a href="" class="nav-link js-scroll trigger">FR | EN</a></li>
+                </ul>
+
+                <!-- Ici on utilise la classe float-right pour mettre le bouton à droite -->
+                <a href="reservation.html" class="btn-primary float-right billeterie" role="button">
+                    <i class="fas fa-ticket-alt fa-lg">Billeterie</i>
+                </a>
+            </div><!-- Fin collapse -->
+        </div><!-- Fin container -->
+    </nav><!-- Fin navbar -->
+
+    <header class="bg">
+        <div class="container text-center">
+            <img class="logo" src="img/logo.png" alt="logo jurrassic world">
+            <img class="ruban" src="img/climatise.png" alt="Ruban climatisation">
+        </div>
+    </header>
+
+    <section class="form">
+        <form>
+            <div class="form-group">
+                <label for="nom">Nom:</label>
+                <input type="text" class="form-control" id="nom" placeholder="Enter nom">
+            </div>
+            <div class="form-group">
+                <label for="prenom">Prénom:</label>
+                <input type="text" class="form-control" id="prenom" placeholder="Enter prenom">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" class="form-control" id="email" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="email" class="form-control" id="nom" placeholder="Enter nom">
+            </div>
+
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="datetime" class="form-control" id="date">
+            </div>
+            <div class="form-group">
+                <label for="heure">Heure:</label>
+                <input type="time" class="form-control" id="time">
+            </div>
+            <div class="form-group">
+                <label for="info">Information complémentaire:</label>
+                <textarea name="info" id="info" class="form-group"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+        </form>
+    </section>
+
+</body>
+
+</html>
