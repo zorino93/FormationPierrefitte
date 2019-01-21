@@ -36,6 +36,10 @@
     padding: 0;
 }
 
+.container-fluid{
+    padding: 0;
+}
+
 .navbar-brand {
     display: inline-block;
     padding-top: .3125rem;
@@ -51,6 +55,10 @@
     background-color: #f3f3f3!important;
 }
 
+header{
+    height: 65px;
+}
+
 .banner1{
     background: url(../images/header_bg.jpg) no-repeat fixed;
     background-size: 100% 100%;
@@ -60,7 +68,7 @@
 
 .banner2{
     position: relative;
-    bottom:430px;
+    bottom:374px;
     text-align:center;
 }
 
@@ -70,6 +78,10 @@
     text-align:center;
 }
 
+#service{
+    margin-top: 20px;
+}
+
 .progress {
     display: flex;
     height: 0.2rem;
@@ -77,23 +89,28 @@
     font-size: .75rem;
     background-color: #e9ecef;
     border-radius: .25rem;
-        margin-top: 16px;
+    margin-top: 16px;
+}
+
+hr{
+    margin-top: 135px;
 }
 
 
 .title3{
     text-align: center;
-    margin-bottom: 30px;
-    margin-top: 58px;
+    margin-bottom: 111px;
+    margin-top: 133px;
 }
 
 .niveau{
-    margin-top: 29px;
+    margin-top: -12px;
 }
 
 .quote{
     margin-top: 10%;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 
@@ -116,6 +133,16 @@
     margin-left: 44px;
 }
 
+.text3{
+    font-size: 48px;
+}
+
+.text2{
+    height: 286px;
+    flex: 0 0 25%;
+    max-width: 17%;
+}
+
 .imac{
     height: 200px;
 }
@@ -124,4 +151,86 @@
     height: 300px;
     position: relative;
     bottom: 20px;
+    left: 110px;
+}
+
+.text4{
+    margin-top: 20px;
+}
+
+.work1{
+    padding-left: 2px;
+    padding-right: 0;
+}
+
+.work1 img{
+    width: 100%;
+}
+
+/* contact */
+ form{
+    padding: 14%;
+    background: grey;
+}
+
+ form .row{
+    margin-bottom: -7%;
+}
+ .btnContact {
+    padding: 1.5%;
+    background: #dc3545;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+.btnContactSubmit
+{
+    width: 50%;
+    padding: 1.5%;
+    color: #fff;
+    background-color: #0062cc;
+    border: none;
+    cursor: pointer;
+}
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    background: pink;
+    border: none;
+    width: 100%;
+}
+
+[type=button], [type=reset], [type=submit], button {
+    -webkit-appearance: button;
+    margin-left: 2%;
+}
+
+.bordure{
+    background: #f1f1f1;
+}
+
+/* Footer */
+
+footer{
+        margin-top: 100px;
+    background: #f1f1f1;
+}
+
+.text-center {
+    text-align: center!important;
+    margin-right: 65px !important;
+}
+
+.liste{
+    max-width: 43%;
+    margin-left: 30px;
+    margin-top: 29px;
+}
+
+.social{
+    margin-left: 455px;
+    font-size: 11px;
 }
