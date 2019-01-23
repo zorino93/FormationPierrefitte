@@ -1,0 +1,15 @@
+.main{
+   position : relative;
+   left : 20px ;
+}
+.parent{
+   margin-left: 40px;
+}
+p{
+   position : static;
+   padding-left : 50px;
+}
+span{
+   position : absolute;
+   left : 10px;
+}

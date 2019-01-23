@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #1c1c1c;
+} 
+
+/*--------- HEADER -----------*/
+
+.container-fluid{
+    width: 100%;
+    margin: auto;
+    background: #f1f1f1;
+    height: 160px;
+}
+
+.container{
+    width: 68%;
+    margin: 0 auto;
+}
+
+.container-body{
+    background: white;
+    height: 1450px;
+}
+
+
+span{
+    color:#e9a003;
+}
+
+.logo{
+    float: left;
+    margin-top: 52px;
+}
+
+.compte{
+float: left;
+margin-left: 5%;
+margin-top: 10px;
+margin-right: 25px;
+}
+
+.compte a{
+    text-decoration: none;
+    color: black;
+}
+
+.panier{
+    padding-top: 10px;
+}
+
+.panier a{
+    text-decoration: none;
+    color: black;
+}
+
+.text1{
+    margin-left: 73%;
+    margin-top: 16px;
+    font-weight: 555;
+    font-size: 20px;
+}
+
+.border{
+    border: 1px solid black;
+    width: 40%;
+    margin-left: 55%;
+    padding: 0;
+}
+
+/* ------ NAVIGATION --------- */
+
+nav ul{
+    width: 124%;
+    margin-top: 14px;
+    margin-left: 55%;
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+
+nav ul li a{
+     float:left;   
+ width:10%; /*l'équart entre mes liens*/
+ color:black;
+ text-decoration:none;
+ text-align: center;
+ height: 30px;
+ padding-top:10px;
+ border-left: 1px solid black;
+ height: 17px;
+}
+
+
+
+/*-------- Produit----------- */
+
+section{
+    width: 68%;
+    margin: 0 auto;
+    background: white;
+    margin-top: 3%;
+}
+
+.banner{
+    box-shadow: 3px 0 3px black, 0.2em 0 1.2em black;
+    width: 100%;
+}
+
+
+.achat{
+    margin-left: 67px;
+    margin-right: 144px
+}
+
+.droite{
+    float: left;
+    margin-right: 17%;
+    text-align: center;
+}
+
+.gauche{
+    float: right;
+}
+
+figure {
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    margin: auto;
+}
+
+figcaption {
+    background-color: #22222247;
+    color: black;
+    font: italic smaller sans-serif;
+    padding-top: 10px;
+    text-align: center;
+    position: relative;
+    bottom: 40px;
+    font-weight: 555;
+    font-size: 17px;
+    height: 30px;
+}
+
+.gant{
+    box-shadow: 3px 0 3px black, 0.2em 0 1.2em black;
+}
+
+.prix{
+    position: relative;
+    top: 55px;
+    left: 83%;
+    background: #3c3c3c;
+    width: 102px;
+    text-align: center;
+    color: orange;
+    font-size: 35px;
+    font-weight: 555;
+    border-radius: 10px;
+
+}
+
+button{
+    background: black;
+    color: white;
+    border: 2px solid;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.text2{
+    font-size: 20px;
+    font-weight: 555;
+    margin-left: 77px;
+}
+
+.text3{
+    font-size: 30px;
+    font-weight: 888;
+    color: #e9a003;
+}
+
+hr{
+    background: #373737;
+    height: 14%;
+    width: 100%;
+}
+
+.point{
+    font-size: 100px;
+    color: gray;
+}
+
+.section{
+    background: white;
+    position: relative;
+    border: -13px solid black;
+    height: 51px;
+}
+
+.contact{
+    border: 2px solid #f1f1f1;
+    background: #f1f1f1;
+    width: 51%;
+    padding-top: 23px;
+    text-align: center;
+    margin-left: 23%;
+    height: 37px;
+    border-radius: 6px;
+
+}
+
+.contact a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.text4{
+    font-size: 30px;
+    float: right;
+}
+
+
+/*------ FOOTER------ */
+
+
+
+footer{
+    background: #373737;
+    height: 500px;
+}
+
+.info{
+    width: 71%;
+    margin: 0 auto;
+}
+
+.gauche1{
+    margin-top: 70px;
+    float: left;
+    width: 24%;
+    text-align: center;
+}
+
+.droite1{
+    margin-top: 70px;
+    float: left;
+    width: 23%;
+    text-align: center;
+}
+
+.baton{
+    background: #3c3c3c;
+    height: 2px;
+    width: 49%;
+    position: relative;
+    top: 49px;
+    left: 21%;
+}
+
+.sociaux{
+    width: 30%;
+    margin-top: 30px;
+    margin-left: 34%;
+}
+
+.text5{
+    margin-top: 12%;
+    margin-left: 39%;
+}
