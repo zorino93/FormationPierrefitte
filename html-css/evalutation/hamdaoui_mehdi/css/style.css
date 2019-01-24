@@ -24,6 +24,7 @@ body{
 .container-body{
     background: white;
     height: 1450px;
+    margin-top: 3%;
 }
 
 
@@ -66,7 +67,7 @@ margin-right: 25px;
 
 .border{
     border: 1px solid black;
-    width: 40%;
+    width: 30%;
     margin-left: 55%;
     padding: 0;
 }
@@ -101,7 +102,6 @@ section{
     width: 68%;
     margin: 0 auto;
     background: white;
-    margin-top: 3%;
 }
 
 .banner{
