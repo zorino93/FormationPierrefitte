@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ecouteurs d'évènements</title>
+    <script src="js/rectangle.js"></script>
     <style media="screen">
         body
         {
@@ -36,19 +38,22 @@
         }
     </style>
 </head>
+
 <body>
 
     <h1>Ecouteurs d'évènements</h1>
     <h2>Enoncé</h2>
-    <p>Construire un programme affichant un rectangle de couleur qui réagit à différentes interactions avec la souris de l'utilisateur.</p>
+    <p>Construire un programme affichant un rectangle de couleur qui réagit à différentes interactions avec la souris
+        de l'utilisateur.</p>
     <h2>couteurs d'évènements</h2>
     <h3>HTML</h3>
     <ul>Dans l'en-tête de la page :
         <ll>Ajouter un titre au programme : "Gestion de la Souris".</u>
-        <li>Créer un bouton (*id : toggle-rectangle*) ayant pour intitlié "Cacher / Afficher le rectangle".</li>
-        <li>Dans la partie principale de la page :</li>
-        <li>Ajouter des paragraphes de texte expliquant ce que le programme peut faire (lire ci-dessous les interactions).</li>
-        <li>Créer une balise **div** vide (*class : rectangle*) pour le rectangle.</li>
+            <li>Créer un bouton (*id : toggle-rectangle*) ayant pour intitlié "Cacher / Afficher le rectangle".</li>
+            <li>Dans la partie principale de la page :</li>
+            <li>Ajouter des paragraphes de texte expliquant ce que le programme peut faire (lire ci-dessous les
+                interactions).</li>
+            <li>Créer une balise **div** vide (*class : rectangle*) pour le rectangle.</li>
     </ul>
     <h3>CSS</h3>
     <ul>
@@ -59,9 +64,9 @@
         <li>Ajouter le CSS nécessaire restant pour que le programme fonctionne.</li>
     </ul>
     <h3>Interactions</h3>
-    <ul
-        <li>Quand on clique sur le bouton *toggle-rectangle*, cela cache ou affiche le rectangle.</li>
-        <li>Quand la souris se déplace à l'intérieur du rectangle il devient rouge; il reprend sa colieur originale quand la souris n'est plus dedans.</li>
+    <ul <li>Quand on clique sur le bouton *toggle-rectangle*, cela cache ou affiche le rectangle.</li>
+        <li>Quand la souris se déplace à l'intérieur du rectangle il devient rouge; il reprend sa colieur originale
+            quand la souris n'est plus dedans.</li>
         <li>Quand on double-clique sur le rectangle il devient vert.</li>
     </ul>
     <h3>Remarques</h3>
@@ -72,10 +77,12 @@
 
     <hr>
     <button type="button" name="button" id="toggle-rectangle">Cacher / Afficher le rectangle</button>
-    <main><hr>
+    <main>
+        <hr>
         <p>Survolez à la souris le rectangle ci-dessous pour qu'il change de couleur !</p>
         <p>Ou double-cliquez dessus... :-)</p>
         <div class="rectangle"></div>
     </main>
 </body>
+
 </html>

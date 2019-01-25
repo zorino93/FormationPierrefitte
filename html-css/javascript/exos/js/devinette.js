@@ -10,11 +10,12 @@
 //     alert("Perdu")
 // }
 
-
+// Message de bienvenue 
 console.log("Bienvenue dans ce jeu de devinette !");
 
+// selectionne un nombre aléatoire entre 1 & 100;
 var solution = Math.floor(Math.random() * 100) + 1;
-console.log(solution);
+console.log("La solution est :" + solution);
 
 var nombre = Number(prompt("Entrez un nombre :"));
 var tentative = 0;
@@ -34,3 +35,4 @@ if (nombre === solution)
     console.log("Bravo ! La solution est " + solution);
 else
     console.log("Vous avez perdu!");
+alert("la bonne solution est :" + solution);

@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Twitter Like</title>
+    <script src="js/twitter.js"></script>
     <style media="screen">
-    body {
-        text-align: center;
-        /*background: #EBF4FB;*/
-        background: #F1F1F1;
-        font-family: arial
-    }
-    .red {
-        color : #ff0000 !important;
-    }
-    textarea {
-        /*border: 2px solid #D9E3F9;*/
-        border: 2px solid #40A798;
-        border-radius: 4px;
-        padding: 8px 14px;
-    }
-    h1 {
-        /*color: #1da1f2;*/
-        color: #40A798;
-        font-size: 33px;
-        font-weight: 300;
-        line-height: 33px;
-        margin-bottom: 11px;
-    }
-    p#counterBlock {
-        color: #456;
-        font-size: 37px;
-        font-weight: bold;
-        margin-top:7px
-    }
+        body {
+            text-align: center;
+            /*background: #EBF4FB;*/
+            background: #F1F1F1;
+            font-family: arial
+        }
 
+        .red {
+            color: #ff0000 !important;
+        }
+
+        textarea {
+            /*border: 2px solid #D9E3F9;*/
+            border: 2px solid #40A798;
+            border-radius: 4px;
+            padding: 8px 14px;
+        }
+
+        h1 {
+            /*color: #1da1f2;*/
+            color: #40A798;
+            font-size: 33px;
+            font-weight: 300;
+            line-height: 33px;
+            margin-bottom: 11px;
+        }
+
+        p#counterBlock {
+            color: #456;
+            font-size: 37px;
+            font-weight: bold;
+            margin-top: 7px
+        }
     </style>
 </head>
+
 <body>
     <h1> Compteur de caractères<br>en 10 lignes de JS<br><small>(Twitter like)</small></h1>
     <hr>
@@ -49,7 +55,8 @@
     <div style="text-align: left; width: 75%; margin: 0 auto">
         <ol>
             <li>Detecter l'evenement à chaque fois que l'utilisateur presse une touche</li>
-            <li>Dans la fonction lancée lorsque l'event est détecter calculer le nb de caractères restants et l'afficher dans le p#counter-block</li>
+            <li>Dans la fonction lancée lorsque l'event est détecter calculer le nb de caractères restants et
+                l'afficher dans le p#counter-block</li>
         </ol>
     </div>
 
@@ -78,4 +85,5 @@
 
     <p id="counterBlock"></p>
 </body>
+
 </html>
