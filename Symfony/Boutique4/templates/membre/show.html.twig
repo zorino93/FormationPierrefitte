@@ -1,0 +1,62 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Membre{% endblock %}
+
+{% block body %}
+    <h1>Membre</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>IdMembre</th>
+                <td>{{ membre.idMembre }}</td>
+            </tr>
+            <tr>
+                <th>Nom</th>
+                <td>{{ membre.nom }}</td>
+            </tr>
+            <tr>
+                <th>Prenom</th>
+                <td>{{ membre.prenom }}</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>{{ membre.email }}</td>
+            </tr>
+            <tr>
+                <th>Civilite</th>
+                <td>{{ membre.civilite }}</td>
+            </tr>
+            <tr>
+                <th>Ville</th>
+                <td>{{ membre.ville }}</td>
+            </tr>
+            <tr>
+                <th>Adresse</th>
+                <td>{{ membre.adresse }}</td>
+            </tr>
+            <tr>
+                <th>Username</th>
+                <td>{{ membre.username }}</td>
+            </tr>
+            <tr>
+                <th>Password</th>
+                <td>{{ membre.password }}</td>
+            </tr>
+            <tr>
+                <th>Codepostal</th>
+                <td>{{ membre.codepostal }}</td>
+            </tr>
+            <tr>
+                <th>Roles</th>
+                <td>{{ membre.roles ? membre.roles|join(', ') : '' }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('membre_index') }}">back to list</a>
+
+    <a href="{{ path('membre_edit', {'idMembre': membre.idMembre}) }}">edit</a>
+
+    {{ include('membre/_delete_form.html.twig') }}
+{% endblock %}

@@ -1,0 +1,49 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}Membre index{% endblock %}
+
+{% block content %}
+    <h1>Membre index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>IdMembre</th>
+                <th>Nom</th>
+                <th>Prenom</th>
+                <th>Email</th>
+                <th>Civilite</th>
+                <th>Ville</th>
+                <th>Adresse</th>
+                <th>Username</th>
+                <th>Codepostal</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for membre in membres %}
+            <tr>
+                <td>{{ membre.idMembre }}</td>
+                <td>{{ membre.nom }}</td>
+                <td>{{ membre.prenom }}</td>
+                <td>{{ membre.email }}</td>
+                <td>{{ membre.civilite }}</td>
+                <td>{{ membre.ville }}</td>
+                <td>{{ membre.adresse }}</td>
+                <td>{{ membre.username }}</td>
+                <td>{{ membre.codepostal }}</td>
+                <td>
+                    <a href="{{ path('membre_show', {'idMembre': membre.idMembre}) }}">show</a>
+                    <a href="{{ path('membre_edit', {'idMembre': membre.idMembre}) }}"><i class="fas fa-edit"></i></a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="12">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('membre_new') }}">Create new</a>
+{% endblock %}

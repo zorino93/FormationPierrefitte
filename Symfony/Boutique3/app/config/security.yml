@@ -1,0 +1,48 @@
+# To get started with security, check out the documentation:
+# https://symfony.com/doc/current/security.html
+security:
+    encoders:
+        Symfony\Component\Security\Core\User\User: plaintext
+        AppBundle\Entity\Membre: 'bcrypt'
+
+    # https://symfony.com/doc/current/security.html#b-configuring-how-users-are-loaded
+    providers:
+        mon_provider:
+            entity:
+                class: AppBundle:Membre
+                property: username
+
+    role_hierarchy:
+        ROLE_ADMIN: ROLE_USER
+        ROLE_SUPER_ADMIN: [ROLE_USER, ROLE_ADMIN]
+
+    firewalls:
+        # disables authentication for assets and the profiler, adapt it according to your needs
+        dev:
+            pattern: ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+
+        main:
+            pattern: ^/
+            anonymous: true
+            # activate different ways to authenticate
+
+            # https://symfony.com/doc/current/security.html#a-configuring-how-your-users-will-authenticate
+            #http_basic: ~
+
+            # https://symfony.com/doc/current/security/form_login_setup.html
+
+            form_login:
+                login_path: connexion
+                check_path: connexion_check
+                default_target_path: homepage
+            
+            logout:
+                path: deconnexion
+                target: homepage
+
+
+    access_control:
+        - { path: ^/admin, roles: ROLE_ADMIN}
+        - { path: ^/profil, roles: ROLE_USER}
+        - { path: ^/admin/statistique, roles: ROLE_SUPER_ADMIN}

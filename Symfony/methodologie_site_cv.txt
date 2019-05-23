@@ -1,0 +1,71 @@
+-> Utilisateurs (1 user) (security.yml : in_memory)
+
+-> Competences
+	Entity\Competences
+	Repository\CompetencesRepository
+	Form\CompetencesType
+	
+-> experiences
+	Entity\Experiences
+	Repository\ExperiencesRepository
+	Form\ExperiencesType
+	
+-> formations 
+	Entity\Formations
+	Repository\FormationsRepository
+	Form\FormationsType
+
+-> loisir
+	Entity\Loisir
+
+-> realisation
+	Entity\Realisation
+	
+-> content 
+	Entity\Content
+
+-> messages
+	Entity\Message
+	
+BaseController
+	- onepage : 
+		route ("/")- indexAction()
+		-> getRepository(Competences::Class) -> findAll() 
+		-> getRepository(Experience::Class) -> findAll() 
+		
+		
+		...
+	- Multipage
+		route("/")
+		route("/competences") - competenceAction()
+			-> getRepository(Competences::Class) -> findAll() 
+			
+		route("/experience") - experienceAction()
+			-> getRepository(Experience::Class) -> findAll()	
+			
+		...	
+AdminController	
+	route("/admin/") -> page de connexion
+	
+	route("/admin/competences/show")
+	route("/admin/competences/add")
+	route("/admin/competences/delete/{id}")
+	route("/admin/competences/update/{id}")
+	
+	route("/admin/experience/show")
+	route("/admin/experience/add")
+	route("/admin/experience/delete/{id}")
+	route("/admin/experience/update/{id}")
+	
+	
+Route :
+	-> Une URL (peut être un id)
+	-> Un nom
+	-> Une fonctionAction()
+	-> En fonction de la route (requete, formulaire, traitement de formulaire etc...)
+	-> Des params
+	-> render Une vue
+	
+	
+yakine.hamida@evogue.fr
+	

@@ -1,0 +1,12 @@
+
+<!-- TestBundle/Ressources/Views/index.html.twig -->
+
+{% for message in app.session.flashbag.get('success') %}
+    {{ message }}<br/>
+{% endfor %}
+
+{% for message in app.session.flashbag.get('error') %}
+    {{ message }}<br/>
+{% endfor %}
+
+<h2>Bonjour je suis sur la page d'accueil</h2>

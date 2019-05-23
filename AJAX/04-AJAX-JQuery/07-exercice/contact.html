@@ -1,0 +1,81 @@
+<!-- 
+    Exercice : 
+    1- créer un formulaire de contact avec les champs nom, email et une zone de texte message.
+    2- vous envoyez les informations du formulaire en AJAX au serveur 
+    3- Dans contact.php : si les champs ne sont pas vides et que le format de l'email est valide, le serveur répond "Merci pour votre message". Sinon, il répond "Veuillez vérifier vos saisie".
+    4- contact.html reçoit la réponse et l'affiche au du formulaire. En revanche, si l'échange en AJAX n'a pas marché, on affiche "Une erreur est survenue".
+    5- si le formulaire est correctement rempli, on l'efface. Sinon, on le laisse pour que l'internaute puisse le compléter.
+ -->
+
+ <!DOCTYPE html>
+ <html lang="fr">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Contact</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+ </head>
+ <body>
+
+    <h1>Contact</h1>
+
+    <div id="affichage"></div>
+
+     <form action="" method="post">
+         <label for="nom">Nom</label><br>
+         <input type="text" name="nom" value=""><br><br>
+
+        <label for="email">email</label><br>
+        <input type="text" name="email" value=""><br><br>
+
+        <label for="message">Message</label><br>
+        <textarea name="message" cols="30" rows="10"></textarea>
+
+        <input type="submit" value="Envoyer">
+     </form>
+
+     <script>
+      $(function () {
+
+            $('form').submit(ajax);
+
+            function ajax(e) {
+
+                 e.preventDefault();
+
+                var contact = $('form').serialize(); 
+
+            
+
+                $.ajax({
+                    url: 'contact.php',
+                    type: 'POST', 
+                    data: contact, 
+                    dataType: 'json', 
+                    success: reponse, 
+                    error: erreur   
+                }); 
+
+
+            }
+
+            function reponse(retourPHP) {
+
+              $('#affichage').html(retourPHP.message); // affiche le HTML renvoyé par le serveur
+
+              if(retourPHP.statut){
+                  $("form").hide();
+              }
+
+          }
+
+          function erreur() {
+              $('#affichage').html('<p>Une erreur est survenue.</p>');
+          }
+
+     }); // fin du document ready
+     </script>
+ </body>
+ </html>

@@ -1,0 +1,12 @@
+.conducteurs{
+
+    width:100%;
+    border-collapse: collapse;
+}
+.conducteurs thead{
+    background: #eee;
+}
+.conducteurs thead th, .conducteurs tbody td{
+    padding: 3px;
+    border: 1px solid #000;
+}

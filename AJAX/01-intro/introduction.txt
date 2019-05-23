@@ -1,0 +1,31 @@
+INTRODUCTION à AJAX
+
+AJAX vient de l'anglais :Asynchronous JavaScript AND XML
+L'AJAX n'est pas un language, mais une combinaison de javaScript côté client, et de PHP/SQL côté serveur, Pour transporter les données entre le navigateur et le serveur on utilise des formats XML ou JSON.
+
+A quoi ça sert ?
+
+AJAX permet d'échanger des données entre client et serveur pour changer le contenu d'une partie d'une page web sans changer toute la page.
+
+Exemple : mise à jour du fil d'actualité facebook automatiquement avec une requête AJAX qui récupère les données toutes les X minutes
+
+------------------------------------
+
+Comment ça marche ?
+
+Suite à des manipulation de l'internaute, un script javascript va envoyer des demandes au serveur web en utilisant l'objet XMLHTTpRequest.
+
+XMLHTTpRequest est un objet javascript  qu ia était créer pour envoyer des requête vers le serveur web en dépit de son nom, il a d'autres usages que le XML : en effet , nous utilisons de plus en plus souvent le format JSON pour transporter des données, mais aussi des formats HTML ou TEXT.
+
+Le terme Asynchronous dans AJAX signifie aue les requêtes JS vers le serveur sont asynchrones : le JS n'attend pas la réponse du serveur pour continuer son exécution. Une fonction spécifique se déclenche quand la réponse arrive dans le navigateur.
+
+-------------------------------------
+
+XML et JSON :
+
+XML et JSON sont des formats qui permettent de véhiculer des données entres le PHP et le javascript.
+
+XML = Extensible Markup Language (les données sont dans des balises personnalisées)
+
+JSON = Javascript Object Notation
+

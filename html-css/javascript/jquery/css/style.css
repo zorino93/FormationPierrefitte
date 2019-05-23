@@ -1,0 +1,14 @@
+.horizontal{
+    width: 50%;
+    background: red;
+}
+
+.sub-level{
+width: 50%;
+background: yellow;
+}
+
+.alt{
+    width: 50%;
+    background: purple;
+}

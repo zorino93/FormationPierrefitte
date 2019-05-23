@@ -1,0 +1,60 @@
+<!-- 
+    Objectif : On veut afficher en AJAX avec la methode POST les informations relative à des employées issues d'un fichier .json situé sur le serveur.
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+     <title>Employés - AJAX JQ</title>
+ </head>
+ <body>
+     <h1>Employés</h1>
+
+     <span>Obtenir les infos sur </span>
+     <select id="personne">
+         <option disabled selected> séléctionnez un prénom</option>
+         <option>Daniel</option>
+         <option>Damien</option>
+         <option>Laura</option>
+         <option>Emilie</option>
+     </select>
+
+     <div id="resultat"></div>
+
+     <script>
+         $(function(){
+            $('#personne').change(function() {
+                var personne_selectionnee = $('#personne').val();// récupère la valeur selectionner dans le selecteur id = "personne"
+                // console.log('ok');
+                // 1- envoie de la requête au serveur en méthode POST avec la fonction $.post() : 
+                $.post('employe.php', {personne : personne_selectionnee}, reponse, 'json');
+                // envoie la requête en methode POST avec 4 arguments : url du fichier du php qui traite la requête, les données envoyée au serveur sous forme d'objet, la fonction qui se déclenche lors de la réception des données, le format de la reponse attendue (cela peut être 'json', 'html', 'text' ou 'xml').
+
+                //2- fonction qui traite la reponse du serveur :
+                function reponse(retourPHP) {
+                    console.log(retourPHP);
+                    if (retourPHP.prenom && retourPHP.nom && retourPHP.service) {
+                        $('#resultat').html('<h2>L\'employé '+ retourPHP.prenom + ' ' + retourPHP.nom + ' est du service ' + retourPHP.service + '</h2>')
+                    }
+                    
+                }
+                
+            });
+         });// fin du document ready
+
+        /* Privilégier GET ou POST en AJAX ?
+        GET est plus rapide que POST et peut être utilisé dans la plupart des cas :
+        on utilise POST quand :
+                  - on veut pas appeler des données en cache mais des données nouvelles (par exemple provennant d'une BDD)
+                  -pour envoyer des grands volumes de données, POST n'est pas limité
+                  - pour envoyer des données provenant de l'utilisateur (exemple login/mdp), POST est plus robuste et sécurisé.
+        */
+        
+     </script>
+ </body>
+ </html>

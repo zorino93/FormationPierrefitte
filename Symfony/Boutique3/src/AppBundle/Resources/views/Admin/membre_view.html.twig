@@ -1,0 +1,73 @@
+{% extends "layout.html.twig" %}
+
+{% block content %}
+
+    <h1>
+        Profil de
+        {{membre.username}}</h1>
+
+    <h2>Infos du membre</h2>
+
+    <ul>
+        <li>id :
+            {{membre.idMembre}}</li>
+        <li>Nom :
+            {{membre.nom}}</li>
+        <li>Prenom:
+            {{membre.prenom}}</li>
+        <li>Email :
+            <a href="mailto:{{membre.idMembre}}">{{membre.email}}</a>
+        </li>
+        <li>
+            {% if membre.civilite == 'm' %}
+                Homme
+            {% else %}
+                Femme
+            {% endif %}
+
+        </li>
+
+    </ul>
+
+    <h2>Adresse du membre</h2>
+    <strong>{{membre.nom}}
+        {{membre.prenom}}</strong><br>
+    {{membre.adresse}}<br>
+    {{membre.codepostal}}
+    {{membre.ville}}
+
+    <h2>Historique de commande</h2>
+    {% if membre.commandes | length > 0%}
+
+        {% for cmd in membre.commandes %}
+
+            <h4>Commande numero{{cmd.idCommande}}</h4>
+
+            <ul>
+                <li>
+                    Date : <b>{{cmd.date | date('d/m/y')}}</b>
+                </li>
+                <li>
+                    Montant : <b>{{cmd.montant | number_format('2',',', ' ')}}</b>
+                </li>
+                <li>
+                    Etat de la commande :</b>
+                {% if cmd.etat == 1 %}
+                    <span style="color:darkred;">En cours de traitements</span>
+                {% elseif cmd.etat == 2 %}
+                    <span style="color:red;">Payée</span>
+                {% elseif cmd.etat == 3 %}
+                    <span style="color:orange;">En cours de livraison</span>
+                {% elseif cmd.etat == 4 %}
+                    <span style="color:lightgreen;">livrée</span>
+                {% endif %}
+            </li>
+        </ul>
+    {% endfor %}
+
+{% else %}
+    <em>Ce membre n'a pas encore effectuer d'achat</em>
+{% endif %}
+
+
+<a href="{{path('membre_update', {'id': membre.idMembre})}}" class="btn btn-success m-2">Modifier la fiche client</a>{% endblock %}

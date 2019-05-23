@@ -1,0 +1,78 @@
+<!-- 
+    Objectif : faire des sélecteurs de produits combinables : couleur, forme, matière des tapis
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tapis</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h1>Tapis</h1>
+    <form action="" method="post">
+        <input type="checkbox" name="matiere[]" value="laine">Laine
+        <!-- si on clique sur "laine" , on ajoute la valeur "laine" à la fin de $_POST['matiere'] côté serveur -->
+        <input type="checkbox" name="matiere[]" value="viscose">Viscose<br>
+
+        <input type="checkbox" name="couleur[]" value="blanc">Blanc
+        <input type="checkbox" name="couleur[]" value="gris">Gris
+        <input type="checkbox" name="couleur[]" value="bleu">Bleu<br>
+
+        <input type="checkbox" name="forme[]" value="rectangulaire">Rectangulaire
+        <input type="checkbox" name="forme[]" value="rond">Rond<br>
+
+    </form>
+
+    <div id="selection"></div> <!-- pour afficher les tapis sélectionnés-->
+
+    <script>
+        $(function () {
+            // 1- appel de la fonction qui envoie la requête au serveur :
+            $('form').change(ajax); // si les choix du formulaire change l'évènement change se déclenche et appel la fonction ajax.
+
+            ajax(); // pour afficher tout les tapis dès le chargement de la page
+
+            // 2- la fonction ajax qui envoie la requête au serveur :
+            function ajax() {
+                var donnees = $('form').serialize(); // serialize() transforme les données du formulaire en string selon la syntaxe matiere[]=laine&couleur[]=bleu... (voir  le console.log() ci-dessous)
+                console.log(donnees); // %5B%5D visibles dans la console sont les [] encodés
+
+                //$.post('selecteurs_produits.php', donnees, reponse, 'html');
+
+                // ou encore avec la fonction $.ajax :
+
+                $.ajax({
+                    url     : 'selecteurs_produits.php', // script de destination
+                    type    : 'POST', // ou 'GET'
+                    data    : donnees, // les données envoyées au serveur
+                    dataType: 'html', // format de retour au serveur
+                    success : reponse, // fonction callback en cas de succès
+                    error   : erreur   // fonction callback en cas d'échec
+                }); // cette fonction remplace $.get ou $.post . Elle reçoit en argument un objet.
+
+            }
+
+            // 3- fonction qui traite la reponse du serveur :
+            function reponse(retourPHP){
+
+                $('#selection').html(retourPHP); // affiche le HTML renvoyé par le serveur
+
+            }
+
+            // 4- fonction callback en cas d'erreur de la requête :
+            function erreur() {
+                $('#selection').html('<p>Une erreur est survenue.</p>');
+            }
+
+        }); // fin du document ready
+    </script>
+</body>
+
+</html>

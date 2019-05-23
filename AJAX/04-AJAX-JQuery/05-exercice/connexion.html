@@ -1,0 +1,60 @@
+<!-- 
+    Exercice : 
+    -Créer une  BDD "forum", avec une table "membre" possédant 3 champs : id_membre INT(3) PK AI, pseudo VARCHAR(255), mdp VARCHAR(255). Vous mettez un pseudo et un mot de passe dans votre BDD.
+
+    2- créer un formulaire de connexion avec le champs pseudo et mot de passe.
+
+    3- envoyer les infos des champs en AJAX à connexion.php Ce script verifie que le pseudo et le mdp sont en BDD, puis envoie au navigateur "Erreur sur les identifiants" ou "Vous êtes connecté."
+
+    4- afficher le message retourné par le serveur
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+     <title>Exercice AJAX connexion</title>
+ </head>
+ <body>
+     <h1>Inscription</h1>
+
+     <form id="inscription">
+        <label for="pseudo">Pseudo</label><br>
+        <input type="text" id="pseudo"><span id="resultat"></span><br><br>
+        <label for="mdp">Mot de passe</label><br>
+        <input type="text" id="mdp"><span id="resultat"></span><br><br>
+
+        <input type="submit" value="s'inscrire" placeholder="S'inscrire">
+
+     </form>
+
+     <script>
+         $(function(){
+             $('#inscription').submit(function(e){
+                 e.preventDefault();
+
+                 var pseudo = $('#pseudo').val();
+                 var mdp = $('#mdp').val();
+
+                 $.post('connexion.php',{inscription : pseudo, pass : mdp}, reponse, 'html');
+
+                  function reponse(retourHTML) {
+                     console.log(retourHTML);
+                    
+                    $('#resultat').html(retourHTML);
+
+                 }
+                 
+             });
+
+         });
+     </script>
+
+
+
+ </body>
+ </html>
